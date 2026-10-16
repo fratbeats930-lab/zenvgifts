@@ -1,14 +1,10 @@
-ZENV GIFTS — ADDITIONAL EARRING PRODUCT
+ZENV GIFTS — ADDITIONAL EARRING PRODUCT WITH IMAGE
 
-CSV: zenv-gifts-oxidized-earrings.csv
-Shopify > Products > Import mein is CSV ko upload karein. Yeh sirf ek additional product hai; pichhle 50-product CSV ko dobara import karna zaroori nahi.
+Shopify > Products > Import mein zenv-gifts-oxidized-earrings.csv upload karein. Yeh ek additional product hai; pichhle 50products ko dobara import karna zaroori nahi.
 
-Selling price: INR 999.00
-Compare-at price: INR 2547.00
-Product title aur dono prices user ke screenshot se liye gaye hain.
+Selling price: INR999.00. Compare-at price: INR2547.00.
+CSV mein hosted imageURL add hai. Shopify import ke waqt photo khud download karega.
+ZIP ke images/ folder mein WebP backup hai. Full-resolution PNG alag download bhi available hai.
 
-Description screenshot ke visible product details se likhi gayi hai. Original product page is environment se network403 ki wajah se read nahi ho paya, isliye yeh original website description ki exact copy nahi hai.
-
-Image Src khaali hai: source photo Shopify product mein manually upload karein. Choose-your-note options screenshot mein visible nahi the, isliye koi note variant invent nahi kiya gaya; product ek default variant ke saath import hoga.
-
-Product active aur Online Store par available import hoga. Import preview check karein; naam, photo, description, price, stock aur variants baad mein Shopify Products se edit ho sakte hain.
+Image userke reference screenshot se inspired AI-generated product image hai. Description screenshot ke visible details se likhi gayi hai; original FUBS page blocked tha, isliye description original website ki exact copy nahi hai.
+Note choices screenshot mein visible nahi the, isliye ek default variant hai. Product active/OnlineStoreavailable import hoga. Import ke baad naam, description, photo aur price Shopify Products mein edit kar sakte hain.
