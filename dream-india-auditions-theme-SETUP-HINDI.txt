@@ -1,0 +1,88 @@
+DREAM INDIA AUDITIONS — WORDPRESS THEME 1.2.0
+===========================================
+
+1. SAHI ZIP INSTALL KAREIN
+-------------------------
+Nayi file ka naam: dream-india-auditions-theme.zip
+Purani dream-india-auditions.zip ek plugin thi; use Themes me upload karne par
+"The theme is missing the style.css stylesheet" error aata tha.
+
+WordPress Dashboard > Appearance > Themes > Add New > Upload Theme.
+Nayi dream-india-auditions-theme.zip select karein > Install Now > Activate.
+ZIP ko extract karke ya poora project dobara ZIP karke upload na karein.
+Website ka home page kholne par audition design aur form khud dikh jayega.
+Settings > Reading me alag home page banane ki zaroorat nahi hai.
+
+Ye poori THEME hai. Alag se registration plugin install karna zaroori nahi hai.
+Agar purana Dream India plugin pehle se active hai to duplicate backend load nahi hoga.
+Purane settings aur Audition Entries isi data ke saath compatible hain.
+
+2. COMPANY LOGO AUR AUDITION MODES
+----------------------------------
+Media > Add New me company logo upload karein aur File URL copy karein.
+Settings > Dream India Auditions me Company logo URL paste karein.
+Audition modes me har line par ek mode likhein (jaise Online).
+Sirf wahi modes add karein jo aap offer karte hain. Save Changes karein.
+Appearance > Customize > Site Identity se bhi logo set kar sakte hain.
+
+3. GOOGLE SHEETS CONNECT KAREIN
+-------------------------------
+Google account me ek nayi private Google Sheet banayein.
+Us Sheet ka ID URL me /d/ aur /edit ke beech hota hai.
+Sheet se Extensions > Apps Script kholein.
+ZIP ke google-apps-script.gs ka poora code Apps Script me paste karein.
+
+Code ke setup() function ke shuru me in do values ko replace karein:
+  const SHEET_ID = 'PASTE_YOUR_GOOGLE_SHEET_ID';
+  const SHARED_SECRET = 'REPLACE_WITH_RANDOM_SECRET_AT_LEAST_32_CHARACTERS';
+Pehli value me apni Google Sheet ka ID aur doosri me kam se kam 32 characters
+ka random secret likhein. Quotes rehne dein aur code save karein.
+
+Secret ko kisi password manager se generate karein. Chat/public file me mat bhejein.
+Apps Script me setup function select karke Run karein aur apne Google account
+se required permissions allow karein. Ye Script Properties me configuration save
+karega aur Auditions tab aur column headings banayega.
+
+Deploy > New deployment > Select type > Web app:
+  Execute as: Me
+  Who has access: Anyone
+Deploy karein aur https://script.google.com/macros/s/.../exec URL copy karein.
+WordPress Settings > Dream India Auditions me ye /exec URL aur wahi shared
+secret paste karein > Save Changes.
+
+Agar aapke Google Workspace admin ne public web apps block kiye hain to pehle
+apne Workspace administrator se deployment access enable karwayein.
+Code badalne par Deploy > Manage deployments > Edit > New version > Deploy karein.
+
+Jab tak valid /exec URL aur secret save nahi hote, form submissions band rehte hain.
+Design/theme fir bhi khulti hai. Setup ke baad pehle apni test entry submit karein.
+
+4. ENTRIES AUR BACKUP
+----------------------
+Har accepted entry ka registration ID success screen par aayega.
+Dashboard > Audition Entries me private backup aur Google sync status dikhega.
+Google Sheet ke Auditions tab me wahi entry aani chahiye.
+Agar Google temporary unavailable ho to WordPress backup save rehta hai aur
+status pending hota hai. WordPress cron site visits/server cron par hourly retry karta hai.
+WP-Cron disabled ho to apni hosting par normal WordPress cron configure karein.
+Secret ko page HTML ya browser JavaScript me nahi bheja jata.
+
+5. DUSRE PAGE PAR FORM (OPTIONAL)
+----------------------------------
+Pages > Add New > Shortcode block me [dream_india_audition] likhein > Publish.
+Ya page ka Template "Audition Registration" select karein.
+Ek page par form ka ek hi instance dikhaya jata hai.
+
+6. TROUBLESHOOTING
+-------------------
+style.css missing: nayi dream-india-auditions-theme.zip select hui hai ya nahi check karein.
+Upload file size: hosting ka upload_max_filesize ZIP se bada hona chahiye.
+Page expired: page refresh karein; form page ko full-page cache se exclude karein.
+Registration not open: /exec URL aur minimum 32-character secret save karein.
+Pending sync: Sheet ID, Apps Script permissions, shared secret aur deployment version check karein.
+Theme activate karne par pehle se banaye pages/posts delete nahi hote.
+Theme switch karne par entries/settings delete nahi hote, lekin admin entries aur
+form backend is theme ya original plugin active rehne par hi available honge.
+
+Hosting par PHP 7.4+ aur WordPress 6.0+ chahiye; supported current versions behtar hain.
+Is ZIP me koi real Google credentials, participant records ya account password nahi hai.
