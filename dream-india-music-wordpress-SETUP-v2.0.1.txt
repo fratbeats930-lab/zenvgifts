@@ -1,0 +1,35 @@
+DREAM INDIA PRODUCTION — WORDPRESS MUSIC THEME 2.0.1
+
+INSTALL
+1. Apne NAYE DOMAIN ke WordPress > Appearance > Themes > Add New > Upload Theme kholein.
+2. dream-india-music-wordpress-theme-v2.0.1.zip upload karein. ZIP extract na karein.
+3. Install Now > Activate karein.
+4. Homepage par music studio website, Our Songs aur Singing Audition Apply button aa jayenge.
+
+WEBSITE
+- Catalogue tab hata diya gaya hai.
+- Our Songs homepage par previews aur alag page par supplied CSV ke 16 YouTube songs dikhata hai.
+- Video preview par click karne par YouTube player khulta hai. Kisi video par YouTube embedding restrictions hon to Watch on YouTube link se kholein.
+- Shop original service listing hai. Booking/enquiry WhatsApp par jaati hai; online checkout/payment processing included nahin hai.
+- Existing WordPress pages ya settings installation se delete nahin hote.
+- Theme ke built-in pages ?dip_view=our-songs jaise links use karte hain. Alag pages banana zaroori nahin hai.
+
+AUDITION REGISTRATION
+Homepage ka Singing Audition Apply button https://dreamindiaproduction.online/ par visitor ko redirect karta hai.
+Yeh theme aapki nayi music website ke liye hai. Audition registration pehle se chal rahi alag website par hota hai.
+Appearance > Dream India Settings mein zaroorat padne par audition URL badal sakte hain.
+
+SOCIAL LINKS
+Appearance > Dream India Settings mein apne YouTube, Instagram, Facebook, Spotify aur X ke HTTPS profile URLs save karein.
+Empty profiles site par hidden rehte hain. Koi profile URL guess nahin kiya gaya hai.
+
+SONGS UPDATE
+Theme assets/songs.json mein supplied CSV se converted songs hain. Original songs.csv bhi theme mein diya hai.
+Har song mein title aur youtube_url required hain; artist/description optional hain.
+Videos YouTube service se stream hote hain. Public YouTube video aur embedding allowed hona zaroori hai.
+
+UPDATE 2.0.1
+Latest owner CSV ke 16 song names aur links isi order mein lagaye gaye hain.
+Homepage hero aur beech ke audition section mein Singing Audition Apply button diya hai.
+Pehle se ye theme installed ho to Upload Theme ke baad Replace current with uploaded select karein.
+Isse website settings delete nahi hoti. Purana content dikhe to hosting/site cache purge karein.
