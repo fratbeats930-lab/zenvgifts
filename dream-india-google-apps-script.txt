@@ -1,0 +1,67 @@
+/** Paste into Extensions > Apps Script of your Google Sheet. */
+function setup() {
+  // EDIT these two values BEFORE running setup(). Copy the Sheet ID from its URL.
+  const SHEET_ID = 'PASTE_YOUR_GOOGLE_SHEET_ID';
+  const SHARED_SECRET = 'REPLACE_WITH_RANDOM_SECRET_AT_LEAST_32_CHARACTERS';
+  if (SHEET_ID.startsWith('PASTE_') || SHARED_SECRET.startsWith('REPLACE_') || SHARED_SECRET.length < 32) {
+    throw new Error('Set the Sheet ID and a random secret of at least 32 characters first.');
+  }
+  PropertiesService.getScriptProperties().setProperties({SHEET_ID: SHEET_ID, SHARED_SECRET: SHARED_SECRET});
+  const spreadsheet = SpreadsheetApp.openById(SHEET_ID);
+  const sheet = spreadsheet.getSheetByName('Auditions') || spreadsheet.insertSheet('Auditions');
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(['Registration ID', 'Received Date & Time (IST)', 'Timezone', 'Name', 'Age', 'Gender', 'WhatsApp', 'Alternate Mobile', 'Email', 'City', 'Audition Mode', 'Consent', 'WordPress Received (IST)']);
+  }
+  // Keep existing entries when upgrading the original plugin integration.
+  sheet.getRange(1, 11).setValue('Audition Mode');
+  sheet.setFrozenRows(1);
+}
+
+function doPost(e) {
+  const reply = object => ContentService.createTextOutput(JSON.stringify(object)).setMimeType(ContentService.MimeType.JSON);
+  let lock;
+  try {
+    const properties = PropertiesService.getScriptProperties();
+    const data = JSON.parse(e.postData.contents);
+    if (!data || !properties.getProperty('SHARED_SECRET') || data.secret !== properties.getProperty('SHARED_SECRET')) {
+      return reply({ok: false, error: 'Unauthorized'});
+    }
+    const text = (value, min, max) => typeof value === 'string' && value.length >= min && value.length <= max;
+    if (!/^DIP-[A-F0-9]{12}$/.test(data.registration_id || '')
+        || !text(data.full_name, 2, 100) || !/^\d+$/.test(data.age || '') || Number(data.age) < 5 || Number(data.age) > 100
+        || !['Female', 'Male', 'Other', 'Prefer not to say'].includes(data.gender)
+        || !/^[6-9][0-9]{9}$/.test(data.whatsapp || '')
+        || (data.alternate && !/^[6-9][0-9]{9}$/.test(data.alternate))
+        || !text(data.city, 2, 100) || !text(data.audition_mode, 1, 500)
+        || data.consent !== '1' || data.timezone !== 'Asia/Kolkata'
+        || !/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/.test(data.timestamp_ist || '')) {
+      return reply({ok: false, error: 'Invalid registration'});
+    }
+    lock = LockService.getScriptLock();
+    lock.waitLock(20000);
+    const sheet = SpreadsheetApp.openById(properties.getProperty('SHEET_ID')).getSheetByName('Auditions');
+    if (!sheet) {
+      return reply({ok: false, error: 'Run setup first'});
+    }
+    // Retries reuse the same canonical ID, so a delayed response cannot add another row.
+    if (sheet.getLastRow() > 1 && sheet.getRange(2, 1, sheet.getLastRow() - 1, 1).createTextFinder(data.registration_id).matchEntireCell(true).findNext()) {
+      return reply({ok: true, registration_id: data.registration_id});
+    }
+    const safe = value => {
+      const string = String(value == null ? '' : value).slice(0, 500);
+      return /^\s*[=+\-@]/.test(string) ? "'" + string : string;
+    };
+    const row = [data.registration_id, Utilities.formatDate(new Date(), 'Asia/Kolkata', 'yyyy-MM-dd HH:mm:ss'), 'Asia/Kolkata', data.full_name, data.age, data.gender, data.whatsapp, data.alternate, data.email, data.city, data.audition_mode, 'Yes', data.timestamp_ist].map(safe);
+    const range = sheet.getRange(sheet.getLastRow() + 1, 1, 1, row.length);
+    range.setNumberFormat('@');
+    range.setValues([row]);
+    SpreadsheetApp.flush();
+    return reply({ok: true, registration_id: data.registration_id});
+  } catch (error) {
+    return reply({ok: false, error: 'Could not save. Please retry.'});
+  } finally {
+    if (lock && lock.hasLock()) {
+      lock.releaseLock();
+    }
+  }
+}
