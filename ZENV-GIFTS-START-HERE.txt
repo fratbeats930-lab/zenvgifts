@@ -1,0 +1,30 @@
+ZENV GIFTS — 50 PRODUCT STORE PACK
+
+Is pack mein 50 original sample products hain: alag images, descriptions aur INR prices.
+
+1. WEBSITE THEME
+   zenv-gifts-shopify-theme.zip ko extract kiye bina Shopify > Online Store > Themes > Add theme > Upload ZIP mein upload karein.
+
+2. PRODUCTS IMPORT
+   Shopify > Products > Import mein zenv-gifts-50-products-active.csv upload karein.
+   Yeh 50 products active aur Online Store par available import karta hai.
+   Agar pehle sirf review karna hai, zenv-gifts-50-products-draft.csv use karein.
+   Dono CSV ek saath import na karein; apne kaam ke hisaab se ek choose karein.
+   Store currency INR honi chahiye. Existing same handles hon to Shopify import preview ka overwrite option check karein.
+
+3. IMAGES
+   CSV mein har image ka public HTTPS URL hai. Shopify import ke waqt images khud download karega.
+   images/ folder mein sabhi 50 photos ka local backup bhi hai.
+
+4. CATALOGUE DEKHEIN
+   Is store pack ko extract karke zenv-gifts-50-product-catalogue.html browser mein kholein.
+   Ismein 50 products, images, prices aur descriptions dekhe ja sakte hain.
+
+5. EDIT KAREIN
+   Import ke baad Shopify > Products se har product ka naam, image, description, price aur stock badal sakte hain.
+   Collections banayein: Hampers, Flowers, Chocolates, Self care, Birthday aur Plants. Theme editor mein category blocks ko unse link karein.
+   Homepage par 8 featured products hain; Shop all mein poore 50 dikhte hain.
+
+Theme ZIP upload se products apne aap create nahi hote; step 2 ka CSV import zaroor karein.
+Photos aur prices original samples hain, FNP se copy kiye hue products nahi.
+Live payment provider, shipping aur customer accounts aapke Shopify store settings se chalte hain.

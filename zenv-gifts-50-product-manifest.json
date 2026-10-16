@@ -1,0 +1,232 @@
+{
+  "product_count": 50,
+  "image_count": 50,
+  "currency": "INR",
+  "products_origin": "original-sample",
+  "files": {
+    "zenv-gifts-shopify-theme.zip": {
+      "bytes": 4323550,
+      "sha256": "a7316e79a1aca281a6af59040f7bd72567b31897552e7ef292869b21ca53f03c"
+    },
+    "zenv-gifts-50-products-active.csv": {
+      "bytes": 59690,
+      "sha256": "04eb38b14dc55daaa2705d5f68bcf0571b035f34f746d5876f43a77989294d6d"
+    },
+    "zenv-gifts-50-products-draft.csv": {
+      "bytes": 59690,
+      "sha256": "f3002a285569169e1a9c82557b5df57d261654b4b9479215188f64ce429cfd1d"
+    },
+    "zenv-gifts-50-product-catalogue.html": {
+      "bytes": 59700,
+      "sha256": "a727a4250d20d8cde2655b565f35df12032cf8e19ea3add400476a8595be0e0e"
+    },
+    "ZENV-GIFTS-START-HERE.txt": {
+      "bytes": 1724,
+      "sha256": "b1a71fadac27c024411e8c3d91158acbfa61f9fb515c401a0bf1be0e0382dc31"
+    },
+    "catalog/products.json": {
+      "bytes": 86402,
+      "sha256": "2ac3c2d7c3b69710ee9962b4b29c5c6de044d7d3c6df5ffa1377ba2669f58083"
+    },
+    "images/product-hamper.webp": {
+      "bytes": 112234,
+      "sha256": "2f919e79f41234f141b96f5cdf515ccaee7710490695528cc9ffd84979f34687"
+    },
+    "images/product-flowers.webp": {
+      "bytes": 117804,
+      "sha256": "0b93e8a41954fce79646fc39e193f828f4decc2f10409e8819c3d847b5a0e842"
+    },
+    "images/product-chocolate.webp": {
+      "bytes": 162690,
+      "sha256": "e6dff38504a0485ee75039fa18a227d55fe3fc2ecc5194baa2747274933aff40"
+    },
+    "images/product-selfcare.webp": {
+      "bytes": 134966,
+      "sha256": "f37e0f78c7f1de1918b7d1e80c6b3ad4fe4d0ceb36d4cd67dbe670554416a1b3"
+    },
+    "images/product-birthday.webp": {
+      "bytes": 130790,
+      "sha256": "af2af82a7844665a4751706b815b25d6115e3172daca1b25f7724cbf0f05974c"
+    },
+    "images/product-plant.webp": {
+      "bytes": 101914,
+      "sha256": "d687000e1eb403c979ed28d9e84c4122273668adc7ef88ed42ec108a2379af39"
+    },
+    "images/product-coffee-conversations.webp": {
+      "bytes": 82080,
+      "sha256": "8321416ff287547a34bbfbff78eae718efc5aaa696985de5cafed73f3356aabf"
+    },
+    "images/product-tea-time-treasures.webp": {
+      "bytes": 79258,
+      "sha256": "241823f738b7b1d18a232d896c0452bab70bb8fed8076003b1fe6bdb50c2435f"
+    },
+    "images/product-sunrise-breakfast-basket.webp": {
+      "bytes": 79252,
+      "sha256": "66d0392aaffb0edbb7a52dab25d2236a032672db1557ea7cc112079040d00a2e"
+    },
+    "images/product-gourmet-nuts-and-dates.webp": {
+      "bytes": 119100,
+      "sha256": "14ea61062109e074b5ae18a5b087018b2eb9c4c95980422dd780eb2ff0fd8882"
+    },
+    "images/product-cozy-evening-hamper.webp": {
+      "bytes": 100216,
+      "sha256": "5997a1f99a51cea97bfcd7a21323595ebfefa99b0fa8b1ccf47e057e6700e404"
+    },
+    "images/product-little-thank-you-box.webp": {
+      "bytes": 72074,
+      "sha256": "1e9a36fb3297de55afc5676f46166100e1730501331166c153b6425c6cf1aca4"
+    },
+    "images/product-new-beginnings-hamper.webp": {
+      "bytes": 76796,
+      "sha256": "fdb220fad73d2b049a7fe082182d9d81327254a53bd62ca34bbf6fe9ab3e622c"
+    },
+    "images/product-artisan-snack-crate.webp": {
+      "bytes": 104506,
+      "sha256": "e8ff4041b3b4b7df64c7f1dc9ea2f088e8c3a476f025970d0dff8afd0bf6ab39"
+    },
+    "images/product-luxe-celebration-trunk.webp": {
+      "bytes": 78610,
+      "sha256": "c631180eb51c247c653299b963cbd2d6229bb52012d8f66735109e9b583950ae"
+    },
+    "images/product-corporate-gratitude-box.webp": {
+      "bytes": 49794,
+      "sha256": "eec1d799bbd55d9a2f3cc8d702f4373c2fbdf65538a096e1785b0fcb011621c4"
+    },
+    "images/product-rose-garden-bouquet.webp": {
+      "bytes": 83522,
+      "sha256": "800de6c6899e0da236b2a51480e94eed74d68eda7622e04a1f4e6980863bbe75"
+    },
+    "images/product-sunflower-smiles.webp": {
+      "bytes": 86978,
+      "sha256": "2734d623ea895b213645e7870bbfdba65256fa41d68c154d5a66f84a453c65b6"
+    },
+    "images/product-lilies-in-linen.webp": {
+      "bytes": 75720,
+      "sha256": "9a450387129a3a9f37a72c9f80aded95250136a414dba7a6bc1786677296e8b1"
+    },
+    "images/product-pastel-daisy-wrap.webp": {
+      "bytes": 78834,
+      "sha256": "37cc55c11874ce4c1c6c7348c47c491af222075acb3d4f38b8fa761847f22570"
+    },
+    "images/product-orchid-elegance.webp": {
+      "bytes": 61998,
+      "sha256": "1b6ae6139ce3378032b7953111c30e1627d478780dee1f633969e2a38308be6b"
+    },
+    "images/product-dried-bloom-keepsake.webp": {
+      "bytes": 80000,
+      "sha256": "09b8e56344b0c84e14461c45f93bf54897c54d087783cb17203e16266b751dee"
+    },
+    "images/product-cocoa-truffle-box.webp": {
+      "bytes": 73172,
+      "sha256": "93628b7d0d090ba582095684e4a9786f807c6f3e63d3b07bf50f52de5bd5ba88"
+    },
+    "images/product-artisan-cocoa-basket.webp": {
+      "bytes": 86754,
+      "sha256": "949ad842acddefefb631cc31123f5d99da7fa11aeb139f14d815bab333b1395e"
+    },
+    "images/product-chocolate-and-coffee-duo.webp": {
+      "bytes": 97384,
+      "sha256": "fff9e1850926cff8d36f038d2a731fd1cefbb0f998cd83d51af116320728a155"
+    },
+    "images/product-dark-chocolate-almonds.webp": {
+      "bytes": 67226,
+      "sha256": "b94056a662ca1db1b0e0ee36c453c75d388a15e4defeb1e99d7782f2bd5d98dd"
+    },
+    "images/product-hazelnut-happiness-box.webp": {
+      "bytes": 86150,
+      "sha256": "e8c1cbb78a24343d62ad82069f3e3ff386309508cb5d7a508fa5f733bc32dd11"
+    },
+    "images/product-sweet-tooth-cookie-tin.webp": {
+      "bytes": 55068,
+      "sha256": "961fa831b3d366342b60999af1cb98da0a0e679bbedbe78d66a2dcebf1344c38"
+    },
+    "images/product-chocolate-rose-pairing.webp": {
+      "bytes": 77784,
+      "sha256": "c0aa0797443a9a301b148655ba69e644473e82685fef4b6038913f46c14fd133"
+    },
+    "images/product-vanilla-calm-ritual.webp": {
+      "bytes": 61212,
+      "sha256": "c1f98747d4ed2834af26169a565ae939f17295e6d89f3889fc3ddacadc25bc1b"
+    },
+    "images/product-lavender-unwind-box.webp": {
+      "bytes": 84228,
+      "sha256": "1bf452ac234f812e0c0b727489c12d49e28ab9ddfb4328196ee2e8fb89bcdd10"
+    },
+    "images/product-rose-and-rest-kit.webp": {
+      "bytes": 66568,
+      "sha256": "8437cb244facedb6ab6390383d835abeabc76696378dc86770de3f21891fa23e"
+    },
+    "images/product-citrus-morning-pamper.webp": {
+      "bytes": 83498,
+      "sha256": "5c82b3512c4035b0578760566bc5a743c24f8e09ca9d8b5f59f3664bc6edc856"
+    },
+    "images/product-candle-and-journal-set.webp": {
+      "bytes": 106744,
+      "sha256": "5e67eabf2671cbd1c20f125c5c245fe331bfbe695d9731a1b5000da469f0324e"
+    },
+    "images/product-mindful-moments-hamper.webp": {
+      "bytes": 76268,
+      "sha256": "e2d29232240208ea9f937c91cf716d368d1ba8bef946d9c0948be9e45648a32b"
+    },
+    "images/product-birthday-confetti-box.webp": {
+      "bytes": 52266,
+      "sha256": "4180e8f9866a581755f624ea4c7c9588f6c937aff72f79772cd92121870c1277"
+    },
+    "images/product-golden-birthday-surprise.webp": {
+      "bytes": 74714,
+      "sha256": "038435e3f13012525fa95d20c245f1a7e323f68378bea6ed91a9a9706ba4af47"
+    },
+    "images/product-birthday-treat-tower.webp": {
+      "bytes": 54780,
+      "sha256": "419145f2a5ed4638b528394e19b0b9d40e2b595ff6dcf9336491f26888163138"
+    },
+    "images/product-little-star-birthday-kit.webp": {
+      "bytes": 37840,
+      "sha256": "af3662a0bc7afad609d0c8ad38c8354842afca2307c0ad72197e05126afa9afc"
+    },
+    "images/product-birthday-blooms-and-bites.webp": {
+      "bytes": 87704,
+      "sha256": "a7d6adb38cc6e420c3a615c0d0587b6a379671b5832973348bd338aea9f82db7"
+    },
+    "images/product-desk-buddy-succulent.webp": {
+      "bytes": 28668,
+      "sha256": "93d9a6edea769e017265bb0ce71cab0f2b4208b676b24f3265b6a15013253d3d"
+    },
+    "images/product-lucky-bamboo-delight.webp": {
+      "bytes": 49256,
+      "sha256": "aa07210b43204627379fd3bd676c8a344744c519d0899fabc55ca0c94f7aa450"
+    },
+    "images/product-money-plant-in-ceramic.webp": {
+      "bytes": 62196,
+      "sha256": "dc5ea81117661395ff5bccbf18519f948541a506360d73908216db0e776ff25a"
+    },
+    "images/product-peace-lily-gift-pot.webp": {
+      "bytes": 53584,
+      "sha256": "82713c0e11b70f413236e78c5f7738d1b0a40aa2b6bf155fe06f0522816edb14"
+    },
+    "images/product-succulent-trio-garden.webp": {
+      "bytes": 63484,
+      "sha256": "377ad2b53e117e52391f4246b3f06e27d37d96cd156c04a71addc9dc12fe149f"
+    },
+    "images/product-festive-diya-and-treats.webp": {
+      "bytes": 97874,
+      "sha256": "90d61edf82ece959203b45825ac089b6e4689dff7649f0c213a50a59ff27f1ff"
+    },
+    "images/product-roshni-festive-hamper.webp": {
+      "bytes": 92258,
+      "sha256": "c3aefc49a7124bfaae987b7be4254f787b2bbf50feeb12c74aa1da25c11c017b"
+    },
+    "images/product-wedding-wishes-keepsake.webp": {
+      "bytes": 76688,
+      "sha256": "8d05ad30bf08e6367ab607fcda0173aa27686f9be3a1e9ac9710e1cdcc55f881"
+    },
+    "images/product-anniversary-love-letter-box.webp": {
+      "bytes": 55104,
+      "sha256": "cec9951b35dcdf34a467679ef75a223ee03c73a94b8f129078fb61180254494f"
+    },
+    "images/product-welcome-little-one-hamper.webp": {
+      "bytes": 71556,
+      "sha256": "d400dfd626baad5a13a8bfada2b45bc687fedb7c780283edf965a98392e0384d"
+    }
+  }
+}
