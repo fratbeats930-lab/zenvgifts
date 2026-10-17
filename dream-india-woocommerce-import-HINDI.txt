@@ -1,0 +1,45 @@
+DREAM INDIA — 25 PRODUCTS WOOCOMMERCE CSV IMPORT
+
+File: dream-india-25-woocommerce-products.csv
+Is CSV ko theme ZIP ki tarah upload nahin karna hai.
+
+1. WooCommerce install/activate karein.
+2. WooCommerce > Settings > General me currency Indian rupee (INR) save karein.
+   CSV me currency column nahin hota; price store ki currency me import hota hai.
+3. WordPress > Products > All Products > Import kholein.
+4. CSV select karein. Naye products ke liye Update existing products unchecked rakhein.
+   Agar same DIP SKU ke products pehle se hain aur unhe is CSV se badalna hai,
+   tab Update existing products check karein. Matching SKU ke name/price/text replace honge.
+5. Continue par column mapping check karein, khaaskar Type, SKU, Name,
+   Regular price, Description, Categories aur Images. Default headers auto-map hote hain.
+   Meta: _dip_unit aur Meta: _dimp_catalog_id ko Import as meta data par mapped rehne dein.
+6. Run the importer dabayein aur completion tak page band na karein.
+7. Products me 25 published items check karein. Product > Edit se naam, price,
+   description, category aur photos badal sakte hain. SKU DIP-... ko stable rakhein.
+
+CSV DETAILS
+- Website ke saare 25 original products; exact original name, description and INR price.
+- 26 public image URLs: audio studio DIP-015 me 1 main aur 1 extra gallery image hai.
+  WooCommerce import in images ko aapki apni WordPress Media Library me copy karta hai.
+- Products simple, virtual services hain: shipping ki zaroorat nahin hai.
+- DIP-015: Rs 800/hour; DIP-022: Rs 1000/hour. Quantity 1 = 1 hour.
+  Baaki items: quantity 1 = 1 package. Billing unit attribute editable hai.
+- DIP-008, DIP-009, DIP-010, DIP-013 aur DIP-017 ki source price Rs 0 hai;
+  CSV me wahi price rakhi hai. Zaroorat ho to publish/use se pehle apna price edit karein.
+- Tax status taxable hai; actual GST/tax rules aapki WooCommerce settings se aayenge.
+- Koi payment API key, order/customer data ya inventory limit file me nahin hai.
+
+SHOP PAGE PAR DIKHANE KE LIYE
+WooCommerce > Settings > Products > General > Shop page me apna Shop page select karein.
+Theme 2.1.0 ka Shop menu isi WooCommerce shop ko kholta hai.
+Products ka status Published aur Catalog visibility Shop and search results rakhein.
+Hostinger/WordPress cache clear karke Shop kholein.
+Cart/Checkout missing ho to theme Appearance > Shop & Payments setup me classic cart/checkout
+checkbox checked rakhein. Existing matching products skip honge aur missing pages ban jayenge.
+Doosri theme par WooCommerce > Status > Tools > Create default WooCommerce pages use kar sakte hain;
+Razorpay ke liye classic shortcode checkout ki plugin compatibility check karein.
+
+AGAR IMAGE IMPORT ERROR AAYE
+Hostinger ke outbound HTTPS request me public raw.githubusercontent.com URLs accessible
+hone chahiye. Importer report me failed SKU check karein; us product ko update karke
+image dobara import karein ya Media Library se original poster assign karein.
