@@ -1,0 +1,70 @@
+DREAM INDIA — WOOCOMMERCE + RAZORPAY SETUP (THEME 2.1.0)
+
+1. UPDATED THEME
+WordPress > Appearance > Themes > Add New > Upload Theme.
+dream-india-music-wordpress-theme-v2.1.0.zip upload karein.
+Purani Dream India theme installed ho to Replace current with uploaded chunein.
+Settings aur existing WordPress products/pages delete nahin hote.
+
+2. WOOCOMMERCE INSTALL
+Plugins > Add New me WooCommerce search karein (author Automattic).
+Install Now > Activate. WooCommerce setup me apni actual business details bharein.
+WooCommerce > Settings > General me country India aur currency Indian rupee (INR) rakhein.
+Store address, taxes/GST aur business policies apne business ke hisaab se configure karein.
+
+3. EXISTING 25 SERVICES
+Appearance > Shop & Payments kholein.
+Use classic cart and checkout for Razorpay checkbox checked rehne dein, phir Import services and create missing store pages button dabayein.
+Is explicit action se 25 original services aur unke local poster images import honge.
+Already existing matching SKU ko overwrite nahin kiya jayega.
+Missing Shop, Cart, Checkout, My Account aur teen policy pages ban jayenge.
+Classic checkout option existing block pages ko delete/overwrite kiye bina compatible pages assign karta hai.
+Shop menu ab WooCommerce products kholega. Customer Add to cart > Cart > Checkout ja sakega.
+Services virtual hain, isliye physical shipping ki zaroorat nahin hai.
+Hourly service me quantity 1 = 1 hour. Package service me quantity 1 = 1 package.
+Free service ka price 0 hi rahega; uske liye gateway payment nahin leta.
+Paid order apne aap appointment/calendar slot reserve nahin karta; studio schedule separately confirm karein.
+
+4. RAZORPAY PLUGIN
+Plugins > Add New me Razorpay for WooCommerce search karein.
+Official Razorpay plugin Install > Activate karein.
+WooCommerce > Settings > Payments > Razorpay > Manage/Set up kholein.
+Razorpay ko enable karein. Payment title me Razorpay / UPI, Cards & Netbanking rakh sakte hain.
+
+5. TEST MODE
+Apne Razorpay Dashboard me Test Mode select karein > Account & Settings > API Keys.
+Test Key ID aur Key Secret generate karein.
+Inhe sirf WordPress ke Razorpay payment settings me paste karein, chat/theme files me nahin.
+Plugin ka Test Mode option ho to Test Mode ON rakhein, phir Save Changes.
+Razorpay ke official test credentials se ek test purchase karein; real bank/card details test ke liye use na karein.
+WooCommerce > Orders me order aur Razorpay test dashboard me payment/status check karein.
+Official test instructions: https://razorpay.com/docs/payments/payment-gateway/web-integration/standard/integration-steps/#test-integration
+
+6. LIVE PAYMENTS
+Razorpay account activation/KYC aur settlement bank verification complete karein.
+Website ka HTTPS certificate working hona chahiye.
+Razorpay Dashboard me Live Mode ki API keys generate karke WordPress payment settings me save karein.
+Plugin me Test Mode OFF karein agar option dikh raha ho.
+Razorpay WooCommerce documentation ke hisaab se webhook/payment-status sync configure karein.
+Official plugin guide: https://razorpay.com/docs/payments/payment-gateway/ecommerce-plugins/woocommerce/
+Customer payment ke baad WooCommerce Orders aur Razorpay Dashboard dono me status check karein.
+
+WHAT THIS ZIP DOES
+Theme WooCommerce ke native products/cart/checkout/account se connected hai.
+Theme me Razorpay account, API keys ya bank details nahin hain. Razorpay plugin install/merchant activation aapke WordPress aur Razorpay account me hota hai.
+WooCommerce inactive ho to purana WhatsApp enquiry shop available rahega.
+Existing 16 named songs aur Singing Audition Apply links preserve hain.
+
+TROUBLESHOOTING
+Import par INR error: WooCommerce > Settings > General > Currency ko INR karke save karein.
+Shop empty: Appearance > Shop & Payments par import/setup action complete karein.
+Payment option missing: Razorpay enabled ho, saved keys correct mode ki hon aur currency/gateway account supported ho.
+Old page/button dikh raha ho: Hostinger/WordPress cache purge karein aur browser hard refresh karein.
+
+POLICIES
+Footer me Privacy Policy, Terms & Conditions aur Refund Policy links hain.
+Refund Policy ka title yahi hai; andar no-refund rule, billing-error handling aur applicable-law rights diye hain.
+Shop setup native policies publish karta hai, WooCommerce Terms page aur WordPress Privacy page assign karta hai.
+Checkout me Terms acceptance checkbox aur Refund Policy notice/link dikhega.
+WordPress > Pages se apne business ke policy text ko edit kar sakte hain.
+Existing published policy pages ko import overwrite nahi karta; unka text apne chosen policy ke mutabik review/edit karein.
